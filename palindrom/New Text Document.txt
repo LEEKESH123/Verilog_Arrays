@@ -1,0 +1,19 @@
+module tb;
+	integer a = 1221;
+	integer b = 0;
+	integer r = 0;
+	initial begin
+		while(a != 0) begin
+			r = a % 10;
+			b = (r *10) + r;
+			a = a / 10;
+			
+			end
+			if(a == b)
+			$display("It's a palindrom",a);
+			else 
+			$display("It's not a palindrom",a);
+		end
+		end
+	endmodule
+
